@@ -11,7 +11,7 @@ Swift 2
 
 ![alt text](screenshot.png "PSLaunch Screenshot")
 
-![alt text](screenshot2.png "PSLaunch Screenshot")
+![alt text](screenshot2.jpg "PSLaunch2 Screenshot")
 
 Use:
 
