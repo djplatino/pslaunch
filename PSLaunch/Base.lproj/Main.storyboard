@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PSLaunch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i4T-tV-Uge" userLabel="Camera View">
+                                <rect key="frame" x="181" y="166" width="130" height="306"/>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N5a-sW-ghf" userLabel="Buttons View">
+                                <rect key="frame" x="16" y="166" width="143" height="306"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="47D-24-mYj">
+                                        <rect key="frame" x="-95" y="-28" width="320" height="120"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnm-Qs-xUM" customClass="MaterialButton" customModule="PSLaunch" customModuleProvider="target">
+                                                <rect key="frame" x="10" y="0.0" width="300" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="ZKJ-v6-usP"/>
+                                                </constraints>
+                                                <state key="normal" title="Web View"/>
+                                                <connections>
+                                                    <action selector="launchInWebViewButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i6Q-ZV-c1l"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWg-5d-OhS" customClass="MaterialButton" customModule="PSLaunch" customModuleProvider="target">
+                                                <rect key="frame" x="10" y="45" width="300" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Browser"/>
+                                                <connections>
+                                                    <action selector="launchInBrowserButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zqJ-Qn-dM6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMf-yu-l4I" customClass="MaterialButton" customModule="PSLaunch" customModuleProvider="target">
+                                                <rect key="frame" x="10" y="90" width="300" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Scan"/>
+                                                <connections>
+                                                    <action selector="scanURLButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="phb-cf-8Fo"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="hnm-Qs-xUM" secondAttribute="trailing" constant="10" id="28i-Ka-wyw"/>
+                                            <constraint firstItem="hnm-Qs-xUM" firstAttribute="leading" secondItem="47D-24-mYj" secondAttribute="leading" constant="10" id="KUl-6i-KWw"/>
+                                            <constraint firstItem="aMf-yu-l4I" firstAttribute="width" secondItem="aWg-5d-OhS" secondAttribute="width" id="Ldd-f5-EBG"/>
+                                            <constraint firstItem="aWg-5d-OhS" firstAttribute="width" secondItem="hnm-Qs-xUM" secondAttribute="width" id="LhW-Q4-BcL"/>
+                                            <constraint firstItem="aMf-yu-l4I" firstAttribute="height" secondItem="aWg-5d-OhS" secondAttribute="height" id="iUZ-3i-8O2"/>
+                                            <constraint firstItem="aWg-5d-OhS" firstAttribute="height" secondItem="hnm-Qs-xUM" secondAttribute="height" id="mUx-OG-HYt"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="47D-24-mYj" firstAttribute="leading" secondItem="N5a-sW-ghf" secondAttribute="leading" id="05W-gb-SeK"/>
+                                    <constraint firstItem="47D-24-mYj" firstAttribute="centerY" secondItem="N5a-sW-ghf" secondAttribute="centerY" id="3jy-hk-DfZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="47D-24-mYj" secondAttribute="trailing" id="Azs-Ul-mga"/>
+                                    <constraint firstItem="47D-24-mYj" firstAttribute="centerX" secondItem="N5a-sW-ghf" secondAttribute="centerX" id="Ggh-pG-Q7c"/>
+                                </constraints>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z68-zZ-RYX">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="z68-zZ-RYX" secondAttribute="height" multiplier="80:11" id="Zfp-26-CKl"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="scan url" id="inO-r9-mei">
+                                        <barButtonItem key="leftBarButtonItem" title="Done" id="n3h-LB-K1S">
+                                            <connections>
+                                                <action selector="doneButton:" destination="BYZ-38-t0r" id="X9B-cP-CCR"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DbD-vM-sjz">
+                                <rect key="frame" x="175" y="61" width="94" height="91"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DbD-vM-sjz" secondAttribute="bottom" id="3MN-ej-i09"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DbD-vM-sjz" secondAttribute="trailing" id="7L4-cM-edZ"/>
+                            <constraint firstItem="i4T-tV-Uge" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7bZ-Ui-bGR"/>
+                            <constraint firstItem="z68-zZ-RYX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AHE-RR-3ND"/>
+                            <constraint firstItem="i4T-tV-Uge" firstAttribute="top" secondItem="z68-zZ-RYX" secondAttribute="bottom" id="AI3-UR-Fcx"/>
+                            <constraint firstItem="DbD-vM-sjz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="BYb-kp-IG7"/>
+                            <constraint firstAttribute="trailing" secondItem="i4T-tV-Uge" secondAttribute="trailing" id="FzY-w0-CxS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="i4T-tV-Uge" secondAttribute="bottom" id="QuR-Jr-sI9"/>
+                            <constraint firstItem="DbD-vM-sjz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SLl-hD-o33"/>
+                            <constraint firstItem="DbD-vM-sjz" firstAttribute="top" secondItem="z68-zZ-RYX" secondAttribute="bottom" id="SdS-P2-ACP"/>
+                            <constraint firstItem="N5a-sW-ghf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UD5-AJ-Arx"/>
+                            <constraint firstAttribute="trailing" secondItem="DbD-vM-sjz" secondAttribute="trailing" id="cH0-VF-5dp"/>
+                            <constraint firstItem="N5a-sW-ghf" firstAttribute="top" secondItem="z68-zZ-RYX" secondAttribute="bottom" id="eHl-1F-1YR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="N5a-sW-ghf" secondAttribute="bottom" id="nPf-Wx-tRE"/>
+                            <constraint firstItem="z68-zZ-RYX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qFe-Ph-C7l"/>
+                            <constraint firstAttribute="trailing" secondItem="z68-zZ-RYX" secondAttribute="trailing" id="qUv-rm-iNL"/>
+                            <constraint firstAttribute="trailing" secondItem="N5a-sW-ghf" secondAttribute="trailing" id="zdf-bQ-6FT"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="7L4-cM-edZ"/>
+                                <exclude reference="BYb-kp-IG7"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="buttonsView" destination="N5a-sW-ghf" id="IKr-kK-yvI"/>
+                        <outlet property="navBar" destination="z68-zZ-RYX" id="G7W-JG-9Zl"/>
+                        <outlet property="scannerView" destination="i4T-tV-Uge" id="94y-Ja-cfV"/>
+                        <outlet property="webView" destination="DbD-vM-sjz" id="E4T-tl-yij"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="418"/>
+        </scene>
+    </scenes>
+</document>
