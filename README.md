@@ -1,4 +1,4 @@
-# pslaunch
+# PSLaunch
 PS Launch for PeopleSoft or other websites
 
 This is a simple IOS application that was created to allow the user to scan a URL from a QR Code or other image.
