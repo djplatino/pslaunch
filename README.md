@@ -10,6 +10,7 @@ XCode 7.3.1
 Swift 2
 
 ![alt text](screenshot.png "PSLaunch Screenshot")
+
 ![alt text](screenshot2.png "PSLaunch Screenshot")
 
 Use:
